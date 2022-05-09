@@ -70,6 +70,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 main {
+  background-image: url(../../images/bg-pattern-top-mobile.svg), url(../../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-size: 100%, 100% 35%;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,6 +89,8 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-image: url(../../images/bg-pattern-top-desktop.svg), url(../../images/bg-pattern-bottom-desktop.svg);
+    background-size: 40%, 70%;
   }
 }
 
