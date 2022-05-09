@@ -44,7 +44,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://davitjabushanuri.github.io/qr-code-component/)
+[![Product Name Screen Shot][product-screenshot]](https://davitjabushanuri.github.io/social-proof-section/)
 
 ### Built With
 
