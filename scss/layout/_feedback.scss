@@ -1,0 +1,49 @@
+.feedback {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	font-size: $feedback-font-size;
+	line-height: 22px;
+
+	&__card {
+		background-color: $magenta-dark;
+		padding: 2rem;
+		border-radius: 8px;
+		height: 248px;
+		min-width: 327px;
+		max-width: 350px;
+
+		&__info {
+			display: flex;
+			align-items: center;
+			gap: 1.6rem;
+			margin-bottom: 1rem;
+
+			.imgContainer {
+				border-radius: 50%;
+				overflow: hidden;
+				height: 40px;
+				width: 40px;
+			}
+
+			.personalInfo {
+				&__name {
+					color: $white;
+					font-weight: 700;
+				}
+
+				&__buyer {
+					color: $pink-soft;
+					font-weight: 400;
+				}
+			}
+		}
+
+		&__text {
+			color: $grayish-dark;
+			font-size: 1rem;
+			font-weight: 500;
+		}
+	}
+}

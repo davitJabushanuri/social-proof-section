@@ -3,13 +3,17 @@
 }
 
 main {
-	height: 100%;
+	min-height: 100%;
 	display: flex;
 	justify-content: center;
 	align-content: center;
+	padding: 5rem 1rem;
 }
 
 .container {
-	margin: 5rem 1.5rem;
 	min-width: 327px;
+	max-width: 1110px;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
 }

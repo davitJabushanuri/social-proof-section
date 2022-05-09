@@ -70,7 +70,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 main {
-  height: 100%;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,11 +79,20 @@ main {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding: 5rem 1rem;
 }
 
 .container {
-  margin: 5rem 1.5rem;
   min-width: 327px;
+  max-width: 1110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
 }
 
 .hero {
@@ -98,11 +107,13 @@ main {
 }
 
 .hero__text {
+  min-width: 327px;
+  max-width: 445px;
   margin-bottom: 2rem;
 }
 
 .hero__text__header {
-  font-size: 32px;
+  font-size: 45px;
   font-weight: 700;
   line-height: 32px;
   margin-bottom: 1rem;
@@ -126,6 +137,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1rem;
 }
 
@@ -144,6 +158,9 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 12px;
+  width: 100%;
+  min-width: 327px;
+  max-width: 445px;
 }
 
 .hero__reviews .review__stars {
@@ -159,5 +176,64 @@ main {
 .hero__reviews .review__text {
   color: #502050;
   font-weight: 700;
+}
+
+.feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.feedback__card {
+  background-color: #502050;
+  padding: 2rem;
+  border-radius: 8px;
+  height: 248px;
+  min-width: 327px;
+  max-width: 350px;
+}
+
+.feedback__card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.feedback__card__info .imgContainer {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+}
+
+.feedback__card__info .personalInfo__name {
+  color: white;
+  font-weight: 700;
+}
+
+.feedback__card__info .personalInfo__buyer {
+  color: #ee68a4;
+  font-weight: 400;
+}
+
+.feedback__card__text {
+  color: #937b92;
+  font-size: 1rem;
+  font-weight: 500;
 }
 /*# sourceMappingURL=main.css.map */

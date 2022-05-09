@@ -4,6 +4,8 @@
 	text-align: center;
 
 	&__text {
+		min-width: 327px;
+		max-width: 445px;
 		margin-bottom: 2rem;
 
 		&__header {
@@ -27,6 +29,7 @@
 	&__reviews {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		gap: 1rem;
 
 		.review {
@@ -37,6 +40,9 @@
 			flex-direction: column;
 			justify-content: center;
 			gap: 12px;
+			width: 100%;
+			min-width: 327px;
+			max-width: 445px;
 
 			&__stars {
 				display: flex;
