@@ -6,6 +6,11 @@
 	font-size: $feedback-font-size;
 	line-height: 22px;
 
+	@media (min-width: 1110px) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
 	&__card {
 		background-color: $magenta-dark;
 		padding: 2rem;
@@ -13,6 +18,15 @@
 		height: 248px;
 		min-width: 327px;
 		max-width: 350px;
+
+		@media (min-width: 1110px) {
+			&:nth-child(2) {
+				transform: translateY(1rem);
+			}
+			&:last-child {
+				transform: translateY(2rem);
+			}
+		}
 
 		&__info {
 			display: flex;

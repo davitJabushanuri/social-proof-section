@@ -3,11 +3,14 @@
 }
 
 main {
-	min-height: 100%;
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
-	align-content: center;
-	padding: 5rem 1rem;
+	padding: 5rem 0;
+
+	@media (min-width: 1110px) {
+		align-items: center;
+	}
 }
 
 .container {
